@@ -28,7 +28,10 @@ def main():
                             st.write(f"🏆 Awards: {movie.get('awards', 'N/A')}")
                             st.write(f"⏲ Run Time: {movie.get('runtime', 'N/A')}")
                             st.write(f"📖 Trailer: {movie.get('trailer', 'N/A')}")
-
+                            st.write(f"🎃 Language: {movie.get('language', 'N/A')}")
+                            st.write(f"📝 Production: {movie.get('production', 'N/A')}")
+                            st.write(f"📜 Plot: {movie.get('plot', 'N/A')}")
+                            
                             # Check poster key and show image only if it exists and is not empty
                             poster_url = movie.get("poster", "")
                             if poster_url:
