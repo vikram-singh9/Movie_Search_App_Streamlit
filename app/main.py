@@ -21,7 +21,13 @@ def main():
                             st.subheader(movie["title"])
                             st.write(f"🎭 Genre: {movie.get('genre', 'N/A')}")
                             st.write(f"📅 Release Year: {movie.get('year', 'N/A')}")
-                            st.write(f"📖 Description: {movie.get('description', 'N/A')}")
+                            st.write(f"⭐ Rating: {movie.get('rating', 'N/A')}")
+                            st.write(f"💲 Box Office: {movie.get('boxOffice', 'N/A')}")
+                            st.write(f"🔄 Country: {movie.get('country', 'N/A')}")
+                            st.write(f"🎬 Director: {movie.get('director', 'N/A')}")
+                            st.write(f"🏆 Awards: {movie.get('awards', 'N/A')}")
+                            st.write(f"⏲ Run Time: {movie.get('runtime', 'N/A')}")
+                            st.write(f"📖 Trailer: {movie.get('trailer', 'N/A')}")
 
                             # Check poster key and show image only if it exists and is not empty
                             poster_url = movie.get("poster", "")
